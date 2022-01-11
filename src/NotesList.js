@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 import { NoteContext } from "./NoteContext";
 import useChecklist from "./useChecklist";
@@ -15,6 +16,8 @@ const ListItem = styled.li`
 
 const NotesList = () => {
   const [state, setState] = React.useContext(NoteContext);
+
+  const navigate = useNavigate();
 
   const { toggleCheck } = useChecklist();
 
@@ -36,6 +39,7 @@ const NotesList = () => {
           </ListItemWrapper>
         </ul>
       ))}
+      <button onClick={() => navigate("/tracks")}>go to tracks</button>
     </div>
   );
 };
