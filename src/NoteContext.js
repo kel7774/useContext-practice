@@ -12,7 +12,7 @@ const NoteContextProvider = ({ children }) => {
         name: "Contact Credit Union"
       },
       {
-        name: "Finish janky website"
+        name: "Finish Janky Website"
       }
     ],
     isChecked: false

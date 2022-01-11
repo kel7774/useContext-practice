@@ -1,8 +1,8 @@
 import React from "react";
-import { NoteContext } from "./notecontext";
+import { NoteContext } from "./NoteContext";
 
 const useChecklist = () => {
-  const [, setState] = React.useContext(NoteContext);
+  const [state, setState] = React.useContext(NoteContext);
 
   function toggleCheck() {
     setState((state) => ({ ...state, isChecked: !state.isChecked }));

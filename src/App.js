@@ -1,6 +1,6 @@
 import "./styles.css";
 import NotesList from "./NotesList";
-import { NoteContextProvider } from "./notecontext";
+import { NoteContextProvider } from "./NoteContext";
 
 export default function App() {
   return (
